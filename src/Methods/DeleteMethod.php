@@ -31,11 +31,11 @@ trait DeleteMethod
     return ["statusText" => "Deleted"];
 }
     /**
- *  Base Delete Method
- *
- *  @param int $id
- *  @return Application|ResponseFactory|Response
- */
+    *  Base Delete Method
+    *
+    *  @param int $id
+    *  @return Application|ResponseFactory|Response
+    */
     public function delete(int $id)
     {
         try {

@@ -17,7 +17,7 @@ trait CreateMethod
     *
     *   @return string|JsonResource
     */
-    public function resourceClassForIndex(): string
+    public function resourceClassForCreate(): string
     {
         return $this->getResource();
     }
@@ -30,7 +30,7 @@ trait CreateMethod
     */
     public function additionalDataForCreate(): array
     {
-        return ["statusText" => "Created"];
+        return [];
     }
 
     /**

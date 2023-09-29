@@ -43,7 +43,7 @@ trait IndexMethod
     */
     public function additionalDataForIndex(): array
     {
-        return ["statusText" => "Success"];
+        return [];
     }
 
     
@@ -56,8 +56,8 @@ trait IndexMethod
     {
         $builder = $this->getCustomBuilder();
         if ($this->getRelations()) {
-        }
             $builder->with($this->getRelations());
+        }
         $builder =  $this->applyFiltering($builder);
 
         try {
@@ -72,10 +72,10 @@ trait IndexMethod
                 }
             }
             $validIncludes = implode(',', $validIncludes);
-            request()->query()->set("include", $validIncludes);
-            $builder =  $this->applyFiltering($builder);
+            request()->query->set("include", $validIncludes);
+            $builder = $this->applyFiltering($builder);
         }
-        
+
         $builder = $this->applySorting($builder); 
         
         $paginateParams = $this->getPaginationParams();

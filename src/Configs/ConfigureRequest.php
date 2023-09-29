@@ -8,18 +8,18 @@ namespace Avstriyskiy\LaravelApiControllerTraits\Configs;
 trait ConfigureRequest
 {
     /**
-    *   This method returns validated request. Request must be in folder Requests/.
-    *   And it must contains this regex in name "{$entityName}/{$action}{$entityName}Request.php"
-    *   This means {DIRECTORY}{ACTION}{ENTITY_NAME}Request.php
-    *   For example: User/CreateUserRequest.php
-    *   
-    *   It fits for base CRUD purposes and you cannot redefine this method, because if you need to redefine it
-    *   so it is not more a base CRUD.
-    *
-    *   @param string $action
-    *   @return array
-    *
-    */
+     *   This method returns validated request. Request must be in folder Requests/.
+     *   And it must contain this regex in name "{$entityName}/{$action}{$entityName}Request.php"
+     *   This means {DIRECTORY}{ACTION}{ENTITY_NAME}Request.php
+     *   For example: User/CreateUserRequest.php
+     *   
+     *   It fits for base CRUD purposes, and you cannot redefine this method, because if you need to redefine it,
+     *   so it is not a more base CRUD.
+     *
+     *   @param string $action
+     *   @return array
+     *
+     */
     protected function getValidatedData(string $action): array
     {
         $action = ucfirst($action);

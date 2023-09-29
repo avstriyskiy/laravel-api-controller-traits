@@ -13,7 +13,7 @@ trait ConfigureSort
 
     /**
      *  This method defines if you need a sort for your Http Method.
-     *  By default sort is enabled. If you want to disable sort for Http Method you have to redefine it in your Controller
+     *  By default, sort is enabled. If you want to disable sort for Http Method you have to redefine it in your Controller
      *
      *  @return bool
      */

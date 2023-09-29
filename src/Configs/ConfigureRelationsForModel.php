@@ -8,10 +8,10 @@ namespace Avstriyskiy\LaravelApiControllerTraits\Configs;
 trait ConfigureRelationsForModel
 {
     /**
-    *  Relations would not be loaded if array is empty.
-    *
-    *  @return array
-    */ 
+     *  Relations would not be loaded if array is empty.
+     *
+     *  @return array
+     */ 
     public function getRelations(): array
     {
         return [];
