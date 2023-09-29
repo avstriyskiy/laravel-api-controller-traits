@@ -3,12 +3,12 @@
 namespace Avstriyskiy\LaravelApiControllerTraits\Methods;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
-use avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureFilter;
+use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigurePagination;
+use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureSort;
+use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureFilter;
+use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureResource;
 use avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureModel;
-use avstriyskiy\LaravelApiControllerTraits\Configs\ConfigurePagination;
 use avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureRelationsForModel;
-use avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureResource;
-use avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureSort;
 
 
 /*
@@ -32,7 +32,7 @@ trait IndexMethod
     */
     public function resourceClassForIndex(): string
     {
-        return ResourceCollection::class;
+        return $this->getCollection();
     }
     
     /**
@@ -41,7 +41,7 @@ trait IndexMethod
     *
     *   @return string|ResourceCollection
     */
-    public function additionalDataForIndex(): string
+    public function additionalDataForIndex(): array
     {
         return ["statusText" => "Success"];
     }
