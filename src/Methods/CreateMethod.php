@@ -4,7 +4,7 @@ namespace Avstriyskiy\LaravelApiControllerTraits\Methods;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureResource;
-use avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureModel;
+use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureModel;
 use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureRequest;
 
 trait CreateMethod

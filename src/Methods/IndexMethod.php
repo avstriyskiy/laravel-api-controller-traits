@@ -7,9 +7,8 @@ use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigurePagination;
 use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureSort;
 use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureFilter;
 use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureResource;
-use avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureModel;
-use avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureRelationsForModel;
-
+use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureModel;
+use Avstriyskiy\LaravelApiControllerTraits\Configs\ConfigureRelationsForModel;
 
 /*
  * This trait implements an IndexMethod to your Controller so you can get 

@@ -5,9 +5,6 @@ namespace Avstriyskiy\LaravelApiControllerTraits\Configs;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-
-
-
 /**
  * Trait to configure JsonResource and ResourceCollections classes.
  */
