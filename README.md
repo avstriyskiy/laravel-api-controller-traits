@@ -57,7 +57,7 @@ You have to create request
 - [getModelNotFoundExceptionClass()](#getmodelnotfoundexceptionclass)
 - [additionalDataForMethod()](#additionaldataformethod)
 - [resourceClassForMethod()](#resourceclassformethod)
-- [getModelNotFoundExceptionClassForMethod()](#getmodelnotfoundexception%class%formethod)
+- [getModelNotFoundExceptionClassForMethod()](#getmodelnotfoundexceptionclassformethod)
 
 
 ## Available customization
