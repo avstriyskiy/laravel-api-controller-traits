@@ -75,7 +75,6 @@ class UserController extends APIController
     }
 }
 ```
-<br><br>
 ##### ```getResource()``` 
 Method allows you to define custom Resource to be used for response in Get, Create and Update Methods. <br>
 By default it returns a JsonResource::class
@@ -89,7 +88,6 @@ class UserController extends APIController
     }
 }
 ```
-<br><br>
 ##### ```getCollection()``` 
 Method allows you to define custom Collection to be used for response. <br>
 By default it returns a ResourceCollection::class
@@ -103,7 +101,6 @@ class UserController extends APIController
     }
 }
 ```
-<br><br>
 ##### ```getModelNotFoundExceptionClass()``` 
 Method allows you to define custom Exception class to be used when model is not found in DB. <br>
 By default it returns an IlluminateModelNotFoundException::class
@@ -117,7 +114,6 @@ class UserController extends APIController
     }
 }
 ```
-<br><br>
 ##### ```additionalDataFor%METHOD%()``` 
 You can add an additional data for your JsonResponse simply defining this kind of methods returnin array of additional data. <br>
 By default they return an empty array.
@@ -136,7 +132,6 @@ class UserController extends APIController
     }
 }
 ```
-<br><br>
 ##### ```resourceClassFor%METHOD%()``` 
 Also you can define custom resource/collection class for single method. <br> Signature is the same for IndexMethod for more compitability, but it should return a collection class like in example. <br>
 By default these methods return ```getResource()``` or ```getCollection()``` methods.
@@ -156,7 +151,6 @@ class UserController extends APIController
     }
 }
 ```
-<br><br>
 ##### ```getModelNotFoundExceptionClassFor%METHOD%()``` 
 Method allows you to define different custom Exception class to be used when model is not found in DB. <br>
 By default it returns a getModelNotFoundException()
@@ -174,4 +168,3 @@ class UserController extends APIController
     }
 }
 ```
-<br><br>
