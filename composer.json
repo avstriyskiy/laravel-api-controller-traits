@@ -20,6 +20,10 @@
         {
             "name": "Samat Tulegenov",
             "email": "samat.tulegenov@phystech.edu"
+        },
+        {
+            "name": "Vladislav Kamaev",
+            "email": "vladkamvl@yandex.ru"
         }
     ],
     "require": {
